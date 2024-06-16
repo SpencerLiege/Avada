@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: "Avada1";
+    src: url(/fonts/Avada1.woff2) format('woff2');
+    /* font-weight: 700; */
+    /* font-style: normal; */
+}
+
+@font-face {
+    font-family: "Avada2";
+    src: url(/fonts/avada3.woff2) format('woff2');
+    /* font-weight: 700; */
+    /* font-style: normal; */
+}
+
+@font-face {
+    font-family: "Avada3";
+    src: url(/fonts/Avada-Restaurant.ttf) format('ttf');
+    /* font-weight: 700; */
+    /* font-style: normal; */
+}
+
+@font-face {
+    font-family: "Avada4";
+    src: url(/fonts/awb-icons.woff) format('woff');
+    /* font-weight: 700; */
+    /* font-style: normal; */
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url(../public/fonts/WorkSans-VariableFont_wght.ttf) format('tff');
+    /* font-weight: 700; */
+    /* font-style: normal; */
+}

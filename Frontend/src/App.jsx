@@ -1,16 +1,23 @@
+// libraries import
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+// components import
+import Header from "./components/Header"
+// pages import
+import Home from "./pages/Home"
 
-
-
-function App() {
-
-
+export default function App() {
   return (
     <>
-      <div>
-        Welcome to Avada
-      </div>
+    <Router>
+      <Header />
+      <main className="">
+        
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </main>
+    </Router>
+    
     </>
   )
 }
-
-export default App
