@@ -17,7 +17,7 @@ export default function Header() {
         
     ]
   return (
-    <header className="w-full absolute bg-gradient-to-b from-black via-black/30 to-black/0 flex justify-between pt-[45px] pb-3 px-[80px] items-center " >
+    <header className="w-full absolute bg-gradient-to-b from-black via-black/30 to-black/0 flex justify-between pt-[45px] pb-3 px-[80px] items-center z-20" >
         {/* Website description */}
         <section className="">
             <img className="w-64" src="https://avada.website/restaurant/wp-content/uploads/sites/112/2021/04/logo-svg.svg" alt="logo" />

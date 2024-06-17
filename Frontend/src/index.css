@@ -37,3 +37,10 @@
     /* font-weight: 700; */
     /* font-style: normal; */
 }
+
+@font-face {
+    font-family: "Bebas";
+    src: url(../public/fonts/BebasNeue-Regular.ttf) format('tff');
+    /* font-weight: 700; */
+    /* font-style: normal; */
+}
