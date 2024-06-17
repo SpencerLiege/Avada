@@ -27,7 +27,7 @@ export default function Header() {
         <nav className="flex ">
             {
                 navLinks.map((x, index)=> (
-                    <Link className="flex items-center gap-x-0.5 mx-3 uppercase text-base text-[#777882] hover:text-white transition duration-500 hover:ease-in-out  font-WorkSans font-normal self-center tracking-widest " key={index}>
+                    <Link className="flex items-center gap-x-0.5 mx-3 uppercase text-base text-slate-300/90 hover:text-white transition duration-500 hover:ease-in-out  font-WorkSans font-normal self-center tracking-widest " key={index}>
                         <span> {x.title} </span>
                         <span> {x.arrow} </span>
                      </Link>

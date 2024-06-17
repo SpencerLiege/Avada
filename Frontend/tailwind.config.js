@@ -12,7 +12,8 @@ export default {
         avada3: ['Avada3', 'sans-serif'],
         avada4: ['Avada4', 'sans-serif'],
         workSans: ['Work Sans', 'sans-serif'],
-        Bebas: ['Bebas', 'sans-serif']
+        Bebas: ['Bebas', 'sans-serif'],
+        azul: ['Azul', 'sans-serif']
       },
     //   backgroundImage: {
     //     'bg-bar': "url('/assets/avadabar.jpg')"

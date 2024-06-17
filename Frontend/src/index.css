@@ -44,3 +44,11 @@
     /* font-weight: 700; */
     /* font-style: normal; */
 }
+
+@font-face {
+    font-family: "Azul";
+    src: url(../public/fonts/Asul-Regular.ttf) format('tff');
+    /* font-style: italic; */
+    /* font-weight: 700; */
+    /* font-style: normal; */
+}
