@@ -138,7 +138,7 @@ export default function Home() {
     {/* 7 - REVIEWS-MAIN */}
     <div className='grid relative grid-cols-2 px-32 mt-16'>
       <div className=''>
-          <img src={woman} alt="" className='h-[750px]'/>
+          <img src={woman} alt="" className='h-[750px] object-cover'/>
       </div>
       <div className='relative bg-black text-white hover:scale-105 transition ease-in-out duration-300'>
       </div>
@@ -195,7 +195,7 @@ export default function Home() {
       <Link className='absolute bottom-6 left-[570px] font-workSans text-sm font-semibold text-white uppercase tracking-widest'> <span> kung pao chicken</span> - <span>$32</span></Link>
     </div>
 
-    {/* 10 - LATEST */}
+    {/* 10 - LATEST NEWS */}
     <div className=' my-20'>
       <div className='font-avada1 px-auto space-y-6 flex flex-col items-center'>
         <p className='text-5xl'>Latest news & promotions</p>
@@ -260,16 +260,16 @@ export default function Home() {
     </div>
 
     {/* 12 - MENU */}
-    <div>
-      <div className='grid grid-cols-3 mx-12 mt-28 h-[1000px]'>
-        <div className='bg-[#E8E8E8]'></div>
-        <div className='bg-cover bg-center relative -translate-y-14' style={{backgroundImage: `url(${foods})`}}>
+  
+    <div className='grid grid-cols-3 mx-20 mt-28  h-[1000px]'>
+      <div className='bg-[#E8E8E8]'></div>
+      <div className='bg-cover bg-center relative -translate-y-14' style={{backgroundImage: `url(${foods})`}}>
           <div className='absolute h-full w-full bg-gradient-to-b from-black from-25% via-black/60 via-60% to-transparent'></div>
 
-        </div>
-        <div className='bg-[#E8E8E8] h-[970px]'></div>
       </div>
+      <div className='bg-[#E8E8E8] h-[970px]'></div>
     </div>
+  
 
     {/* 13 - BUY AVADA */}
     <div className='bg-cover bg-center relative h-[800px] mt-24' style={{backgroundImage: `url(${chopstick})`}}>
@@ -281,13 +281,13 @@ export default function Home() {
                   <span className=' font-avada2 text-6xl font-semibold uppercase leading-snug tracking-wider'>Braised</span>
                   <span className=' font-avada2  text-6xl font-semibold uppercase leading-snug tracking-wider '>abalone</span>
                 </div>
-                <p className='font-avada2 uppercase leading-snug tracking-wider '>$43 </p>
+                <p className='font-workSans text-slate-200/90 uppercase text-lg  leading-snug tracking-wider mt-4 ml-28'>$43 </p>
               </div>
               
               
               <p className='border-b-2 w-20 mt-8'></p>
-              <span className='mt-4 leading-8 w-72 font-serif text-slate-300/90 text-xl'>Pretium accumsan porttitor viverra leo gravida mollis imperdiet. Fringilla nibh pharetra sociis leo amet.</span>
-              <Link className='uppercase border font-workSans text-center tracking-wider py-3 px-6 mt-4 w-56 hover:bg-white hover:text-black transition ease-in-out duration-500'>buy avada today</Link>
+              <span className='mt-4 leading-8 w-72 font-serif text-slate-200/90 text-xl'>Pretium accumsan porttitor viverra leo gravida mollis imperdiet. Fringilla nibh pharetra sociis leo amet.</span>
+              <Link className='uppercase border font-workSans text-center tracking-wider py-3 mt-4 w-56 hover:bg-white hover:text-black transition ease-in-out duration-500'>buy avada today</Link>
             </article>
           </div>
 
