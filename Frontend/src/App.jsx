@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Header from "./components/Header"
 // pages import
 import Home from "./pages/Home"
+import MenuScreen from './pages/MenuScreen'
 import Footer from "./components/Footer"
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
         
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<MenuScreen />}/>
         </Routes>
       </main>
       <Footer />

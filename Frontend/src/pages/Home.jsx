@@ -63,11 +63,10 @@ export default function Home() {
         </p>
       </div>
 
-      <div className='mr-36 relative' >
-          <img className='h-[640px] contrast-100 w-[490px] hover:shadow-lg hover:shadow-slate-300 hover:scale-105 transition ease-in-out duration-500' src={chef} alt="" />
-          <div className='absolute bottom-44 left-36 text-white font-semibold text-lg font-workSans tracking-widest'>
+      <div className='bg-cover bg-center mr-36 h-[650px] w-[490px] hover:shadow-lg hover:shadow-slate-300 hover:scale-105 transition ease-in-out duration-500' style={{backgroundImage: `url(${chef})`}} >
+          <div className=' text-white font-semibold text-lg font-workSans tracking-widest mt-[570px] text-center'>
             Califonia rolls - $22
-      </div>
+          </div>
          
       </div> 
     </div>
@@ -137,10 +136,11 @@ export default function Home() {
 
     {/* 7 - REVIEWS-MAIN */}
     <div className='grid relative grid-cols-2 px-32 mt-16'>
-      <div className=''>
-          <img src={woman} alt="" className='h-[750px] object-cover'/>
+      <div className='bg-cover bg-center h-[750px]' style={{backgroundImage: `url(${woman})`}}>
+          
       </div>
       <div className='relative bg-black text-white hover:scale-105 transition ease-in-out duration-300'>
+        
       </div>
       <article className='grid p-24 col-start-2 space-y-10 mr-32 absolute text-white'>
         <p className='font-serif uppercase tracking-wider text-base text-slate-300'> {reviews[0].name} </p>
