@@ -1,11 +1,15 @@
 import express from 'express'
 import dotenv from 'dotenv'
+import connectDB from './config/db.js'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
 
 
 // dotenv config
 dotenv.config()
+
+// db connection 
+connectDB()
 
 // express initialization
 const port = process.env.PORT || 3000

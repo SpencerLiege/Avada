@@ -9,7 +9,9 @@
     "start": "node backend/app.js",
     "server": "nodemon backend/app.js",
     "client": "npm run dev --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\" "
+    "dev": "concurrently \"npm run server\" \"npm run client\" ",
+    "data:import": "node backend/seeder.js",
+    "data:delete": "node backend/seeder.js -d"
   },
   "keywords": [],
   "author": "Spencer",
@@ -19,9 +21,11 @@
     "nodemon": "^3.1.3"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "mongoose": "^8.4.3"
   }
 }
