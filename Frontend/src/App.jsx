@@ -5,6 +5,7 @@ import Header from "./components/Header"
 // pages import
 import Home from "./pages/Home"
 import MenuScreen from './pages/MenuScreen'
+import MenuItemScreen from "./pages/MenuItemScreen"
 import Footer from "./components/Footer"
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<MenuScreen />}/>
+          <Route path="/menu/:id" element={<MenuItemScreen />}/>
         </Routes>
       </main>
       <Footer />

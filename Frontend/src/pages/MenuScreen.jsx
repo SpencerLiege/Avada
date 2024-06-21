@@ -1,44 +1,51 @@
 import { Link } from 'react-router-dom'
 import menuImage from '../../public/menu/page22x.jpg'
 import menu402x from '../../public/menu/menu402x.jpg'
+import menu392x from '../../public/menu/menu392x.jpg'
+import gin from '../../public/menu/gin.jpg'
+import { FaCarRear } from 'react-icons/fa6'
 import products from '../../products'
-import ProdcutList from '../components/ProdcutList'
+import PageHeader from '../components/PageHeader'
+import MainCourse from '../components/MainCourse'
+import Hors from '../components/Hors'
+import Deserts from '../components/Deserts'
+import Menu from '../components/Menu'
+import Drinks from '../components/Drinks'
 
 export default function MenuScreen() {
   return (
     <div>
         {/* HEADER */}
-        <header className="relative md:h-[410px] bg-black bg-cover bg-center" style={{backgroundImage: `url(${menuImage})`}}>
-            <div className="absolute inset-0 bg-gradient-to-b from-black from-20% via-black/55 via-80% to-black/25" >
-                 
+        <PageHeader image={menuImage}>
+            <div className='uppercase text-white '>
+                <p className='font-workSans tracking-wider mb-10' >best table in town</p>
+                <p className='flex items-center justify-between'>
+                        <span className='font-avada2 text-7xl'>our seasonal menu</span>
+                        <Link className='flex items-center space-x-3 uppercase border font-workSans text-center tracking-wider py-2 px-8 hover:bg-white hover:text-black transition ease-in-out duration-500'><FaCarRear className='w-3 h-4'/><span> view takeout menu </span></Link>
+                </p>
             </div>
-        </header>
+        </PageHeader>
 
         {/* Hors d’oeuvres */}
-        <section className='mx-32 mt-20'>
-            
-            <div className='space-y-6'>
-                <h1 className='font-avada1 font-normal text-4xl'>Hors d’oeuvres</h1>
-                <p className='border-b-2 w-20 '></p>
-            </div>
-            <Link className='my-10 grid md:grid-cols-3 gap-x-3 gap-y-10'>
-                {
-                    products.map((product, index)=> (
-                        product.category === 'Hors d’oeuvres' ? (<ProdcutList key={index} products={product} />) : ('')
-                        
-                    )).slice(0, 6)
-                }
-            </Link>
-           
-        </section>
+        <Hors products={products}/>    
 
         {/* menu */}
-        <div className='relative bg-cover bg-center h-[450px]' style={{backgroundImage: `url(${menu402x})`}}>
-            <div className='absolute inset-0 bg-gradient-to-t from-black/45 from-5% via-transparent to-transparent grid justify-center items-end'>
-                <Link className='font-avada3 uppercase text-white text-base tracking-wide p-3' >black pudding - $25</Link>
-            </div>
-            
-        </div>
+        <Menu image={menu402x}>black pudding - $25</Menu>
+
+        {/* Main course */}
+        <MainCourse products={products}/>
+
+        {/* menu 2*/}
+        <Menu image={menu392x}>maple and mouse chickpeas - $25</Menu>
+
+        {/* Deserts and cake */}
+        <Deserts products={products}/>
+
+        {/* menu 3*/}
+        <Menu image={gin}>Gin and tonic - $13</Menu>
+
+        {/* Drinks and cocktails */}
+        <Drinks products={products}/>
 
     </div>
   )
