@@ -8,7 +8,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 export default function Footer() {
   return (
     <>
-        <footer>
+        <footer className=''>
             <div className="bg-cover bg-center relative h-[500px]" style={{backgroundImage: `url(${avadabar})` }}>
                 <div className='absolute inset-0 bg-gradient-to-b from-black via-black to-transparent'>  
                     <div className='grid place-content-center text-white  mx-96 mt-24 py-6  space-y-6 '>

@@ -6,24 +6,28 @@ import Header from "./components/Header"
 import Home from "./pages/Home"
 import MenuScreen from './pages/MenuScreen'
 import MenuItemScreen from "./pages/MenuItemScreen"
+import TakeoutScreen from "./pages/TakeoutScreen"
+import CartScreen from "./pages/CartScreen"
 import Footer from "./components/Footer"
 
 export default function App() {
   return (
     <>
-    <Router>
+
+    <Router >
+      <main className="relative">
       <Header />
-      <main className="">
-        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<MenuScreen />}/>
           <Route path="/menu/:id" element={<MenuItemScreen />}/>
+          <Route path="/menu/:id/takeout" element={<TakeoutScreen />}/>
+          <Route path="/cart" element={<CartScreen />}/>
         </Routes>
-      </main>
       <Footer />
+      </main>
     </Router>
-    
+
     </>
   )
 }

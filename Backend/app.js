@@ -3,13 +3,14 @@ import dotenv from 'dotenv'
 import connectDB from './config/db.js'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
-
+import { notFound, errorHandler } from './middleware/errorHandler.js'
+import productsRouter from './routes/productsRouter.js'
 
 // dotenv config
 dotenv.config()
 
 // db connection 
-connectDB()
+connectDB() 
 
 // express initialization
 const port = process.env.PORT || 3000
@@ -32,7 +33,12 @@ app.get('/', (req, res)=> {
     res.send('Home Screen')
 })
 
+// routes
+app.use('/products', productsRouter)
 
+// errror handler
+app.use(notFound)
+app.use(errorHandler)
 
 app.listen(port, ()=>{
     console.log(`Active on PORT ${port}`)

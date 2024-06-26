@@ -1,6 +1,5 @@
 /* eslint-disable react/jsx-key */
 import { Link } from "react-router-dom"
-// import NewTakeOut from "./NewTakeOut"
 import { RiShoppingBasketLine } from "react-icons/ri";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md"
 
